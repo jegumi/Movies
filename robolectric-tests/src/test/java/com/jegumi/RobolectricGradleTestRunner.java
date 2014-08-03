@@ -1,4 +1,4 @@
-package com.discogs;
+package com.jegumi;
 
 import org.junit.runners.model.InitializationError;
 import org.robolectric.AndroidManifest;

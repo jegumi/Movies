@@ -1,8 +1,8 @@
-package com.discogs.tests;
+package com.jegumi.movies.tests;
 
 import android.view.View;
 
-import com.discogs.RobolectricGradleTestRunner;
+import com.jegumi.RobolectricGradleTestRunner;
 import com.jegumi.movies.R;
 import com.jegumi.movies.ui.ListMoviesActivity;
 
@@ -13,10 +13,10 @@ import org.robolectric.util.ActivityController;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricGradleTestRunner.class)
-public class MyAndroidClassTest {
+public class AndroidListMoviesLayoutTest {
 
     @Test
-    public void testWhenActivityCreatedHelloTextViewIsVisible() throws Exception {
+    public void testTabletOrMobile() throws Exception {
         ListMoviesActivity activity = new ListMoviesActivity();
 
         ActivityController.of(activity).attach().create();
