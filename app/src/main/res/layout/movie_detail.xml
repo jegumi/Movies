@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_medium"
+    tools:context=".MyActivity">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumb_image_view"
+        android:layout_width="@dimen/poster_width"
+        android:layout_height="@dimen/poster_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/spacing_medium" />
+
+    <TextView
+        android:id="@+id/rating_text_view"
+        style="@style/RatingText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:layout_alignTop="@+id/thumb_image_view"
+        android:layout_alignBottom="@+id/thumb_image_view"
+        android:layout_toRightOf="@id/thumb_image_view" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        style="@style/TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_below="@id/thumb_image_view" />
+
+    <TextView
+        android:id="@+id/sinopsis_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text_view" />
+
+</RelativeLayout>
